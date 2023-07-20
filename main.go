@@ -7,12 +7,9 @@ import (
 
 func main() {
 
-	t := time.Now()
-	hora := t.Hour()
-
-	if hora < 12 {
+	if t := time.Now(); t.Hour() < 12 {
 		fmt.Println("BUENOS DIAS")
-	} else if hora < 17 {
+	} else if t.Hour() < 17 {
 		fmt.Println("BUENAS TARDES")
 	} else {
 		fmt.Println("BUENAS NOCHES")
